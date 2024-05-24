@@ -1,0 +1,10 @@
+*
+!*/
+!.gitignore
+!README.md
+!*.sv
+!*.v
+!*.xpr
+!*.xdc
+!*.wcfg
+!*.bit
