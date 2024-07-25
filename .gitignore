@@ -9,3 +9,4 @@
 !*.xdc
 !*.wcfg
 !*.bit
+!/doc/*
