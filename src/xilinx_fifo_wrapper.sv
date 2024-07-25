@@ -1,4 +1,4 @@
-module fifo_wrapper #(  
+module xilinx_fifo_wrapper #(  
         parameter FIFO_DEPTH = 16
         , parameter DATA_WIDTH = 32)
     (

@@ -98,7 +98,7 @@ genvar i, j, k;
 generate
     for(i=0; i<SYSTOL_ACTIVATION_COUNT; i++) begin
         
-        fifo_wrapper #(  
+        xilinx_fifo_wrapper #(  
             .FIFO_DEPTH(ACTIVATION_QUEUE_DEPTH)
             , .DATA_WIDTH(`DATA_TYPE_SIZE))
         activation_fifo (
@@ -116,7 +116,7 @@ generate
     
     for(j=0; j<SYSTOL_WEIGHT_COUNT; j++) begin
         
-        fifo_wrapper #(  
+        xilinx_fifo_wrapper #(  
             .FIFO_DEPTH(WEIGHT_QUEUE_DEPTH)
             , .DATA_WIDTH(`DATA_TYPE_SIZE))
         weight_fifo (
@@ -134,7 +134,7 @@ generate
 
     for(k = 0; k < SYSTOL_WEIGHT_COUNT; k++) begin
         
-        fifo_wrapper #(  
+        xilinx_fifo_wrapper #(  
             .FIFO_DEPTH(OFFSET_QUEUE_DEPTH)
             , .DATA_WIDTH(`DATA_TYPE_SIZE))
         offset_fifo (
